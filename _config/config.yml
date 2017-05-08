@@ -1,0 +1,19 @@
+---
+Name: silverware-lightbox
+---
+
+# Configure Content Controller:
+
+SilverStripe\CMS\Controllers\ContentController:
+  required_js:
+    - silverware-lightbox/client/dist/js/bundle.js
+  required_css:
+    - silverware-lightbox/client/dist/styles/bundle.css
+
+# Configure Meta Data Extension:
+
+SilverWare\Extensions\Model\MetaDataExtension:
+  image_link_attributes:
+    data-title: $MetaTitle
+    data-footer: $MetaSummaryLimited
+    data-gallery: $MetaImageGroup
