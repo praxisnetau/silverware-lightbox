@@ -1,7 +1,7 @@
 /* Lightbox
 ===================================================================================================================== */
 
-import $ from 'jQuery';
+import $ from 'jquery';
 import 'ekko-lightbox-dist';
 
 $(function() {

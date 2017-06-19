@@ -7,4 +7,4 @@ require('styles/bundle.scss');
 
 // Load Lightbox:
 
-require('jquery/lightbox');
+require('jquery/lightbox.js');

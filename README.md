@@ -1,5 +1,9 @@
 # SilverWare Lightbox Module
 
+[![Latest Stable Version](https://poser.pugx.org/silverware/lightbox/v/stable)](https://packagist.org/packages/silverware/lightbox)
+[![Latest Unstable Version](https://poser.pugx.org/silverware/lightbox/v/unstable)](https://packagist.org/packages/silverware/lightbox)
+[![License](https://poser.pugx.org/silverware/lightbox/license)](https://packagist.org/packages/silverware/lightbox)
+
 Provides a lightbox popup for linked images within [SilverWare][silverware] apps.
 
 ## Contents

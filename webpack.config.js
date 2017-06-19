@@ -180,8 +180,7 @@ const config = (env) => {
         ]
       },
       externals: {
-        jquery: 'jQuery',
-        jQuery: 'jQuery'
+        jquery: 'jQuery'
       }
     }
   ];
