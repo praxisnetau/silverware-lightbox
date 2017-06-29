@@ -8,7 +8,7 @@ $(function() {
   
   // Setup Click Handler for Image Links / Lightbox Toggles:
   
-  $('.image-link.to-file, [data-toggle="lightbox"]').on('click', function(e) {
+  $(document).on('click', '.image-link.to-file, [data-toggle="lightbox"]', function(e) {
     e.preventDefault();
     $(this).ekkoLightbox();
   });
