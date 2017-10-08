@@ -5,6 +5,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 // Load Plugin Modules:
 
@@ -18,7 +19,7 @@ const PATHS = {
     SRC: path.resolve(__dirname, 'client/src'),
     DIST: path.resolve(__dirname, 'client/dist'),
     BUNDLES: path.resolve(__dirname, 'client/src/bundles'),
-    PUBLIC: '/silverware-lightbox/client/dist/',
+    PUBLIC: '/resources/silverware/lightbox/client/dist/',
   },
   MODULES: path.resolve(__dirname, 'node_modules')
 };
@@ -52,7 +53,10 @@ const rules = (env) => {
           loader: 'css-loader'
         },
         {
-          loader: 'postcss-loader'
+          loader: 'postcss-loader',
+          options: {
+            plugins: [ autoprefixer ] // see "browserslist" in package.json
+          }
         }
       ])
     },
@@ -63,7 +67,10 @@ const rules = (env) => {
           loader: 'css-loader'
         },
         {
-          loader: 'postcss-loader'
+          loader: 'postcss-loader',
+          options: {
+            plugins: [ autoprefixer ] // see "browserslist" in package.json
+          }
         },
         {
           loader: 'sass-loader',
@@ -82,7 +89,10 @@ const rules = (env) => {
           loader: 'css-loader'
         },
         {
-          loader: 'postcss-loader'
+          loader: 'postcss-loader',
+          options: {
+            plugins: [ autoprefixer ] // see "browserslist" in package.json
+          }
         },
         {
           loader: 'less-loader',
@@ -170,7 +180,6 @@ const config = (env) => {
       plugins: plugins(env, PATHS.MODULE.SRC, PATHS.MODULE.DIST),
       resolve: {
         alias: {
-          'theme': path.resolve(process.env.PWD, '../themes/silverware-theme/source'),
           'ekko-lightbox-dist$': path.resolve(PATHS.MODULES, 'ekko-lightbox/dist/ekko-lightbox.js'),
           'ekko-lightbox-less$': path.resolve(PATHS.MODULES, 'ekko-lightbox/ekko-lightbox.less')
         },
