@@ -6,9 +6,9 @@ Name: silverware-lightbox
 
 SilverStripe\CMS\Controllers\ContentController:
   required_js:
-    - silverware-lightbox/client/dist/js/bundle.js
+    - "silverware/lightbox: client/dist/js/bundle.js"
   required_css:
-    - silverware-lightbox/client/dist/styles/bundle.css
+    - "silverware/lightbox: client/dist/styles/bundle.css"
 
 # Configure Meta Data Extension:
 
