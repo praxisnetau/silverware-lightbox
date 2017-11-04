@@ -15,5 +15,5 @@ SilverStripe\CMS\Controllers\ContentController:
 SilverWare\Extensions\Model\MetaDataExtension:
   image_link_attributes:
     data-title: $MetaTitle
-    data-footer: $MetaSummaryLimited
+    data-footer: $MetaImageFooter
     data-gallery: $MetaImageGroup
